@@ -7,3 +7,6 @@
 
 ## REQUIREMENTS
 PHP (with curl extension).
+
+<img src="screenshot.png">
+<img src="screenshot2.png">
