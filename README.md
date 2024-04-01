@@ -10,7 +10,7 @@ PHP (with curl extension).
 * have fun! (Use munin's Limit low/high for better visuality.)
 * add optional cron entry to log CellID changes (adjust paths to your install location and frequency to your taste)
 ```
-1 * * * * echo "`date +\%Y\%m\%d-%H\%M` - `/var/www/html/huaweimodem/huaweiModemLogCellID.php`" >> /var/www/html/huaweimodem/log/huaweiModemLogCellID.log
+1 * * * * echo "`date +\%Y\%m\%d-\%H\%M` - `/var/www/html/huaweimodem/huaweiModemLogCellID.php`" >> /var/www/html/huaweimodem/log/huaweiModemLogCellID.log
 ```
 
 <img src="screenshot.png">
