@@ -16,8 +16,8 @@ $huaweiModemUrl = 'http://192.168.8.1';
 sendMuninResponse(
     getHuaweiDataFromApi($huaweiModemUrl, 'api/device/signal'),
     array(
-        'pci',
-        'cell_id',
+        // 'pci',       // these don't look good on Munin graph
+        // 'cell_id',
         'rsrq',
         'rsrp',
         'rssi',
