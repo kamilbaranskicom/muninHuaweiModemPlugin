@@ -5,9 +5,10 @@
 PHP (with curl extension).
 
 ## INSTALL
-* Set the modem IP (`$huaweiModemUrl = ` line).
-* Install in munin
-* add optional cron entry to log CellID changes (every hour)
+* set the modem IP (`$huaweiModemUrl = ` line).
+* install in munin (and remember to restart munin-node -HUP afterwards), wait for munin to regenerate png/htmls.
+* have fun! (Use munin's Limit low/high for better visuality.)
+* add optional cron entry to log CellID changes (adjust paths to your install location and frequency to your taste)
 ```
 1 * * * * echo "`date +\%Y\%m\%d-%H\%M` - `/var/www/html/huaweimodem/huaweiModemLogCellID.php`" >> /var/www/html/huaweimodem/log/huaweiModemLogCellID.log
 ```
